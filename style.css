@@ -75,8 +75,11 @@ body {
     line-height: 1.6;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    flex-shrink: 1;
 }
 
 .line {
@@ -483,9 +486,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .panel-actions {
-    margin-top: 16px;
+    margin-top: auto;
     padding-top: 16px;
     border-top: 1px solid #d0d7de;
+    flex-shrink: 0;
 }
 
 .panel-actions a {
